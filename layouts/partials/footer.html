@@ -1,4 +1,16 @@
 {{ partial "footer_scripts" . }}
-
+<section class="footer">
+    <div class="container">
+        <div class="content">
+            <p>&copy; {{ now.Format "2006" }} Nathan Wittstock &mdash; Content: <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>, Code: <a href="https://github.com/fardog/fardog.io/blob/master/LICENSE">MIT</a>, unless otherwise noted.</p>
+            <p>
+                View the <a href="https://github.com/fardog/fardog.io">source</a> for this site.
+                {{ if .Site.Params.privacy_link }}
+                    <a href="{{ .Site.Params.privacy_link }}">Privacy</a>.
+                {{ end }}
+            </p>
+        </div>
+    </div>
+</section>
 </body>
 </html>

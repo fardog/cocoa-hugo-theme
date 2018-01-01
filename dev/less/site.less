@@ -83,6 +83,9 @@ section.icons {
 section.main {
     .flex-order(2);
 }
+section.footer {
+    .flex-order(3);
+}
 
 @media (min-width: @wide-1-breakpoint) {
     section.header {
@@ -93,6 +96,9 @@ section.main {
     }
     section.main {
         .flex-order(1);
+    }
+    section.footer {
+        .flex-order(3);
     }
 }
 
@@ -261,6 +267,18 @@ section.icons {
             }
 
         }
+    }
+}
+
+section.footer {
+    .container {
+        .justify-content(flex-start);
+        font-size: @base-font-size;
+    }
+
+    .content {
+        color: @gray;
+        font-size: 0.8rem;
     }
 }
 

@@ -90,6 +90,10 @@
                 <a href="{{ .Permalink }}"><img class="icon flag" src="/img/flags/{{ .Lang }}.svg"></a>
             {{ end }}
         {{ end }}
+
+        {{ if .Site.Params.tracking_pixel }}
+            <img src="{{ .Site.Params.tracking_pixel }}?referrer={{ .Permalink }}" />
+        {{ end }}
         </div>
     </div>
 </section>
